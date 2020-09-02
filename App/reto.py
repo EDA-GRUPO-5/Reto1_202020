@@ -179,8 +179,8 @@ def EntenderGenero(lst, genero): #Entender un genero
             cantidad_votos+=1
     promedio=votos/cantidad_votos
     lista_final=[len(lista_peliculas), lista_peliculas, promedio]
-    t1_stop = process_time()
     print("Tiempo de ejecución ",t1_stop-t1_start," segundos")
+    t1_stop = process_time()
     return lista_final
    
 def CrearRanking (lst, num_peliculas, mejor_peor, criterio, genero): #Crear ranking
