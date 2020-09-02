@@ -169,19 +169,17 @@ def ConocerActor(lst1, lst2, ActorName):
 def EntenderGenero(lst, genero): #Entender un genero
     
     lista_peliculas=[]
-    lista_votos=[]
+    votos=0
+    cantidad_votos=0
     t1_start = process_time()
     for peliculas in lst["elements"]:
         if genero.lower() in peliculas["genres"].lower():
             lista_peliculas.append(peliculas["original_title"])
-            lista_votos.append(int(peliculas["vote_count"]))
-    total_votos=0
-    for votos in lista_votos:
-        total_votos+=votos
-    promedio=total_votos/len(lista_votos)
+            votos+=int(peliculas["vote_count"])
+            cantidad_votos+=1
+    promedio=votos/cantidad_votos
     lista_final=[len(lista_peliculas), lista_peliculas, promedio]
     t1_stop = process_time()
-    print(lista_votos)
     print("Tiempo de ejecución ",t1_stop-t1_start," segundos")
     return lista_final
    
