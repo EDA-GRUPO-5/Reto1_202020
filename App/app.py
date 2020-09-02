@@ -229,7 +229,7 @@ def main():
                     rtaLP, rtaPP, rtaDC, rtaLen = ConocerActor(lista, lista2, NombreActor)
                     print(f"El actor {NombreActor} ha participado en {rtaLen} peliculas y son {rtaLP}\nCon un promedio de {rtaPP} y el director con el que mas ha colaborado es {rtaDC}")
 
-            elif int(inputs[0])==3: #opcion 5
+            elif int(inputs[0])==5: #opcion 5
                 if lista==None or lista["size"]==0:
                     print("La lista está vacía")
                 else:
@@ -237,7 +237,7 @@ def main():
                     lista_final=EntenderGenero(lista,genero)
                     print("La cantidad de películas del género", genero,"es:", lista_final[0], ", los nombres de las películas son:", lista_final[1], "y el promedio de votos es:", lista_final[2])
 
-            elif int(inputs[0])==4: #opcion 6
+            elif int(inputs[0])==6: #opcion 6
                 if lista==None or lista['size']==0:
                     print("La lista está vacía")
                 else:
