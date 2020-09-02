@@ -153,6 +153,7 @@ def EntenderGenero(lst, genero): #Entender un genero
     promedio=total_votos/len(lista_votos)
     lista_final=[len(lista_peliculas), lista_peliculas, promedio]
     t1_stop = process_time()
+    print(lista_votos)
     print("Tiempo de ejecución ",t1_stop-t1_start," segundos")
     return lista_final
    
