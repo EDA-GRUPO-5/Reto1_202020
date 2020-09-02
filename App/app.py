@@ -207,7 +207,7 @@ def main():
                     else:
                         mejor_peor=input("Ingrese si desea su ranking de MEJOR o PEOR\n")
                         criteria = input("Ingrese el criterio COUNT o AVERAGE\n")
-                        lista_nueva=orderElementsByCriteria(lista,num_peliculas,mejor_peor,criteria)
+                        lista_nueva=RankingPeliculas(lista,num_peliculas,mejor_peor,criteria)
                         print("Su lista ordernada es:",lista_nueva)
                         
             elif int(inputs[0])==3: #opcion 3
